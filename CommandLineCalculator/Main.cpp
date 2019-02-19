@@ -4,7 +4,7 @@
 
 
 using namespace std;
-
+using namespace commandspace; 
 int main(){
     CalculatorApp calculatorApp = CalculatorApp::getInstance() ;
     calculatorApp.run();

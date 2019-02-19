@@ -4,15 +4,15 @@
 #include <string>
 #include "Command.h"
 using namespace std;
+namespace commandspace{
+    class AddCommand : public Command{
+        public:
+        AddCommand();
+        virtual ~AddCommand();
 
-class AddCommand : public Command{
-    public:
-    AddCommand();
-    virtual ~AddCommand();
-
-    // implement abstract virtual functions of superclass
-    virtual void execute(int&, int);
-    virtual string getName();
-};
-
+        // implement abstract virtual functions of superclass
+        virtual void execute(int&, int);
+        virtual string getName();
+    };
+}
 #endif
